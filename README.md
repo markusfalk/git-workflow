@@ -22,3 +22,7 @@ Yet another branching strategy
 ### Commits
 
 ## Semantic Versioning
+
+I reccomend [semantic versioning](http://semver.org/) for Tags and Releases.
+
+Also you can find some accumulated info about this on the [front-end cheat sheet](https://github.com/markusfalk/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf?raw=true) [PDF].
