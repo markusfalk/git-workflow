@@ -50,19 +50,19 @@ The test branch is a 'read only branch' that can be used to install a set of fea
 The name of a 'regular' branch consists of the following delimited by '-':
 
 * Date
-* is this branch a feature, bugfix or a hotfix (matches commit categories)
+* is this branch a hotfix?
 * name of branch author
 * issue #
 * short description (use _ for spaces)
 
 ```
-YYYYMMDD-<feature|bugfix|hotfix>-<name>-<issue#>-<description>
+YYYYMMDD-[hotfix]-<name>-<issue#>-<description>
 ```
 
 Example:
 
 ```
-20151006-feature-falk-1234-my_new_branch
+20151006-falk-1234-my_new_branch
 ```
 
 The exceptions to the rule are:
