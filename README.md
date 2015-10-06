@@ -54,19 +54,27 @@ The name of a branch consists of the following delimited by '-':
 * issue #
 * short description (use _ for spaces)
 
-```YYYYMMDD-<name>-<issue#>-<description>```
+```
+YYYYMMDD-<name>-<issue#>-<description>
+```
 
 Example:
 
-```20151006-falk-1234-my_new_branch```
+```
+20151006-falk-1234-my_new_branch
+```
 
 ### Tags
 
-```v<semver>```
+```
+v<semver>
+```
 
 Example:
 
-```v1.0.0```
+```
+v1.0.0
+```
 
 ### Commits
 
@@ -78,13 +86,17 @@ There are 3 major categories a commit can fall into:
 
 To identify them easily within git log commit messages follow this schema:
 
-```[<CATEGORY>] <description> #refs <issue#>```
+```
+[<CATEGORY>] <description> #refs <issue#>
+```
 
 Also descriptions are written in imperative tense: 'change' not 'changes' or 'changed'.
 
 Example:
 
-```[FEATURE] add ajax function refs #1234```
+```
+[FEATURE] add ajax function refs #1234
+```
 
 ## Best practices
 
