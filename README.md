@@ -117,7 +117,7 @@ Example:
 
 ## Semantic Versioning
 
-I recommend [semantic versioning](http://semver.org/) for Tags and Releases.
+[Semantic versioning](http://semver.org/) is used for tags and releases.
 
 Also you can find some accumulated info about this on the [front-end cheat sheet](https://github.com/markusfalk/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf?raw=true) [PDF].
 
