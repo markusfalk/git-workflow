@@ -50,18 +50,19 @@ The test branch is a 'read only branch' that can be used to install a set of fea
 The name of a 'regular' branch consists of the following delimited by '-':
 
 * Date
+* is this branch a feature, bugfix or a hotfix (matches commit categories)
 * name of branch author
 * issue #
 * short description (use _ for spaces)
 
 ```
-YYYYMMDD-<name>-<issue#>-<description>
+YYYYMMDD-<feature|bugfix|hotfix>-<name>-<issue#>-<description>
 ```
 
 Example:
 
 ```
-20151006-falk-1234-my_new_branch
+20151006-feature-falk-1234-my_new_branch
 ```
 
 The exceptions to the rule are:
@@ -89,6 +90,7 @@ There are 3 major categories a commit can fall into:
 
 * **Feature**: the commit introduces something new
 * **Bugfix**: the commit fixes something
+* **Hotfix**: the commit fixes for a hotfix release
 * **Task**: everything else
 
 To identify them easily within git log commit messages follow this schema:
