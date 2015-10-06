@@ -47,7 +47,7 @@ The test branch is a 'read only branch' that can be used to install a set of fea
 
 ### Branches
 
-The name of a branch consists of the following delimited by '-':
+The name of a 'regular' branch consists of the following delimited by '-':
 
 * Date
 * name of branch author
@@ -63,6 +63,13 @@ Example:
 ```
 20151006-falk-1234-my_new_branch
 ```
+
+The exceptions to the rule are:
+
+* master
+* development
+* test
+* Release Branches: the are named after their release. much like the corresponding tag
 
 ### Tags
 
