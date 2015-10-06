@@ -52,11 +52,11 @@ The name of a 'regular' branch consists of the following delimited by '-':
 * Date
 * is this branch a hotfix?
 * name of branch author
-* issue #
+* #issue
 * short description (use _ for spaces)
 
 ```
-YYYYMMDD-[hotfix]-<name>-<issue#>-<description>
+YYYYMMDD-[hotfix]-<name>-<#issue>-<description>
 ```
 
 Example:
@@ -96,7 +96,7 @@ There are 3 major categories a commit can fall into:
 To identify them easily within git log commit messages follow this schema:
 
 ```
-[<CATEGORY>] <description> #refs <issue#>
+[<CATEGORY>] <description> #refs <#issue>
 ```
 
 Also descriptions are written in imperative tense: 'change' not 'changes' or 'changed'.
