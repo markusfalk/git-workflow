@@ -126,3 +126,33 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [GIT cheat sheet](http://pixelbrackets.github.io/git_cheat_sheet/git_cheat_sheet.pdf)
 * [Everything GIT at Atlassian](https://www.atlassian.com/git/)
+
+# How to
+
+## Create a new feature
+
+1. checkout 'development'
+2. create feature branch
+3. checkout feature branch and work on it
+4. when features is done/tested - merge back to 'development'
+
+## Create a test setup
+
+1. checkout 'test'
+2. merge feature branch or cherry pick what you need to be tested
+
+## Create a new release
+
+1. checkout 'development'
+2. create release branch
+3. setup changes for that release (bump version number, ...)
+4. merge release branch to 'development' & 'master'
+5. create tag with current release in 'master'
+
+## Create a hotfix
+
+1. checkout 'master'
+2. create hotfix branch
+3. repair
+4. merge hotfix branch to 'master' & 'development'
+5. create tag with current release in 'master'
