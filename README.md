@@ -129,12 +129,13 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 
 # How to
 
-## Create a new feature
+## Create a new feature/bugfix
 
 1. checkout 'development'
-2. create feature branch
-3. checkout feature branch and work on it
+2. create feature/bugfix branch
+3. checkout feature/bugfix branch and work on it
 4. when features is done/tested - merge back to 'development'
+5. delete feature/bugfix branch
 
 ## Create a test setup
 
@@ -148,6 +149,7 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 3. setup changes for that release (bump version number, ...)
 4. merge release branch to 'development' & 'master'
 5. create tag with current release in 'master'
+6. delete release branch
 
 ## Create a hotfix
 
@@ -156,3 +158,4 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 3. repair
 4. merge hotfix branch to 'master' & 'development'
 5. create tag with current release in 'master'
+6. delete hotfix branch
