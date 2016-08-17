@@ -108,7 +108,7 @@ YYYYMMDD-[hotfix]-<name>-<#issue>-<description>
 Example:
 
 ```
-20151006-falk-1234-my_new_branch
+20151006-m.falk-1234-my_new_branch
 ```
 
 The exceptions to the rule are:
