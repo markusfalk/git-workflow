@@ -3,8 +3,47 @@ Yet another branching strategy
 
 ## Branches
 
-<img src="https://raw.githubusercontent.com/markusfalk/git-workflow/master/branching.png" alt="Branches">
+```
++              +              +             +            +            +            +
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              <------------------------------------------------------+            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
++--------------> +----------> <-------------+            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             <------------+            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |         +-->
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              |              |             +------------>            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+<--------------+              +------------->            |            |            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
+|              +-------------->             |            |            |            |
+|              |              |             |            |            |            |
+|              |              +--------------------------------------->            |
+|              |              |             |            |            |            |
+|              |              |             |            |            |            |
++              +              +             +            +            +            +
+hotfix         master        development   story         feature      release      test
 
+```
 ### Hotfix
 
 This branch is used to merge in urgent fixes that cannot wait for the next planned release.
