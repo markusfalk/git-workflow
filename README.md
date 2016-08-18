@@ -1,4 +1,4 @@
-# git-workflow
+# A GIT branching model and workflow
 
 Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
 
