@@ -190,4 +190,4 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [GIT cheat sheet](http://pixelbrackets.github.io/git_cheat_sheet/git_cheat_sheet.pdf)
 * [Everything GIT at Atlassian](https://www.atlassian.com/git/)
-* [Graphics created with](http://asciiflow.com/)
+* [Graphics created with asciiflow](http://asciiflow.com/)
