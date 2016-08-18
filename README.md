@@ -1,4 +1,4 @@
-# A GIT branching model and workflow
+# A GIT branching model and workflow <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="50" width="50" />
 
 Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
 
