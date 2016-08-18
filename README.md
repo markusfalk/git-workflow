@@ -2,7 +2,7 @@
 
 Yet another branching strategy.
 
-I am using this with a centralized git workflow. Would be interesting to see how people use this with forking workflow?!
+I am using this with a centralized git workflow.
 
 ```
            +------+
