@@ -4,7 +4,7 @@ Yet another branching strategy.
 
 I am using this with a centralized git workflow.
 
-```
+```javascript
            +------+
            |      |
   +-----+  + REPO +  +-----+
@@ -23,7 +23,7 @@ USER A       USER B      USER C
 
 ## Branches
 
-```
+```ruby
   +              +              +             +            +            +            +
   |              |              |             |            |            |            |
   |              |              |             |            |            |            |
