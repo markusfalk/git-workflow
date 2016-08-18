@@ -1,10 +1,10 @@
 # git-workflow
 
-Yet another branching strategy.
+Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
 
 I am using this with a centralized git workflow.
 
-```javascript
+```ruby
            +------+
            |      |
   +-----+  + REPO +  +-----+
@@ -22,6 +22,8 @@ USER A       USER B      USER C
 ```
 
 ## Branches
+
+The figure below shows what the branching model looks like. Arrows to the right indicate where to branch off from. Arrows to the left show where to merge back into. The samll dots (•) represent tags/releases.
 
 ```ruby
   +              +              +             +            +            +            +
@@ -53,6 +55,8 @@ USER A       USER B      USER C
   |              |              |             |            |            |            |
   +              +              +             +            +            +            +
 hotfix         master      development      story       feature      release        test
+
+                                   Branching Model
 
 ```
 ### Hotfix
