@@ -18,7 +18,7 @@ I am using this with a centralized git workflow.
   +            +           +
 USER A       USER B      USER C
 
-      Centralized workflow
+      Centralized Workflow
 ```
 
 ## Branches
@@ -56,7 +56,7 @@ The figure below shows what the branching model looks like. Arrows to the right 
   +              +              +             +            +            +            +
 hotfix         master      development      story       feature      release        test
 
-                                   Branching Model
+                                    Branching Model
 
 ```
 ### Hotfix
@@ -109,6 +109,8 @@ The 'test' branch is a 'read only branch' that can be used to install a set of f
 
 ## Naming Convention
 
+To identify the different types of branches I just mentioned it is usefull to follow a certain naming convention. Naming conventions for commits are independent from the branching model but I suggest using them. They have proven to be useful in my development experience.
+
 ### Branches
 
 The name of a branch consists of the following delimited by '-':
@@ -132,7 +134,7 @@ Example:
 20151006-STORY-456-FEATURE-789-m.falk-subtask_of_a_story
 ```
 
-The exceptions to the rule are:
+The **exceptions** to the rule are:
 
 * master
 * development
