@@ -18,7 +18,7 @@ I am using this with a centralized git workflow.
   +            +           +
 USER A       USER B      USER C
 
-      Centralized Workflow
+     [Centralized Workflow]
 ```
 
 ## Branches
@@ -56,7 +56,7 @@ The figure below shows what the branching model looks like. Arrows to the right 
   +              +              +             +            +            +            +
 hotfix         master      development      story       feature      release        test
 
-                                    Branching Model
+                                   [Branching Model]
 
 ```
 ### Hotfix
