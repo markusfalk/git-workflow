@@ -23,7 +23,7 @@ USER A       USER B      USER C
 
 ## Branches
 
-The figure below shows what the branching model looks like. Arrows to the right (+->) indicate where to branch off from. Arrows to the left (<-+) show where to merge back into. The samll dots (•) represent tags/releases.
+The figure below shows what the branching model looks like. Arrows to the right (+->) indicate where to branch off from. Arrows to the left (<-+) show where to merge back into. The small dots (•) represent tags/releases.
 
 ```ruby
   +              +              +             +            +            +            +
