@@ -83,17 +83,19 @@ This is the main development branch. It contains all finished features. Integrat
 
 ### Story
 
-If a set of features can be accumulated into something bigger or if you are working on something new with other developers this branch is where it goes. This branch represents a user story known from agile software development methodologies. Smaller features and tasks can be branched from the story branch.
+If a set of features can be accumulated into something bigger or if you are working on something with other developers this branch is where it goes. This branch represents a user story known from agile software development methodologies. Smaller features and tasks can be branched from the story branch for individual development.
 
 * branch from development
 * merge to development
+* gets deleted after the story has been merged to master and released
 
 ### Feature
 
-Feature branches are used to implement new features. Create branches for small units of code. They live as long as you are working on something new.
+Feature branches are used to implement new features, tasks or bugfixes. Create branches for small units of code. They live as long as you are working on them.
 
-* branch from development or story branch
-* merge into development or story branch
+* branch directly from development or a story branch
+* merge back into development or a story branch
+* gets deleted after the feature has been merged to story/master
 
 ### Release
 
@@ -104,30 +106,35 @@ To prepare for a new relase a new release branche is created. There you can add 
 
 ### Test
 
-The test branch is a 'read only branch' that can be used to install a set of features onto a testint environment. Simply merge any branch you want to test or cherry pick commits into this branch.
+The 'test' branch is a 'read only branch' that can be used to install a set of features onto a testing environment/stage/server. Simply merge any branch you want to test or cherry pick commits into this branch. You can have as many testing branches as you like. I am using  a 'pre-production-server' and 'test-server' branch. Whenever a push on one of those happens it is autmatically installed on one of those machines.
 
-* never merges back into any other branch.
+* branched from any other (depending on what you want to test - could be hotfix branch, development a story or a feature)
+* never merges back into any other branch!
+* delete after the test is finished succesfully
 
 ## Naming Convention
 
 ### Branches
 
-The name of a 'regular' branch consists of the following delimited by '-':
+The name of a branch consists of the following delimited by '-':
 
 * Date
-* is this branch a hotfix?
-* name of branch author
+* types - can be hotfix, story, feature, bugfix or task (see commits for more info on those types)
 * #issue
+* name of branch author. (makes it easy to identify who should clean up branches after release)
 * short description (use _ for spaces)
 
+Schema:
 ```
-YYYYMMDD-[hotfix]-<name>-<#issue>-<description>
+YYYYMMDD-<TYPE>-<#issue>[-<TYPE>-<#issue>]-<author-name>-<short_description>
 ```
 
 Example:
-
 ```
-20151006-m.falk-1234-my_new_branch
+20151006-BUGFIX-111-m.falk-a_standalone_bugfix
+20151006-FEATURE-123-m.falk-a_standalone_feature
+20151006-STORY-456-m.falk-a_story_we_work_on
+20151006-STORY-456-FEATURE-789-m.falk-subtask_of_a_story
 ```
 
 The exceptions to the rule are:
@@ -135,7 +142,7 @@ The exceptions to the rule are:
 * master
 * development
 * test
-* Release Branches: the are named after their release. much like the corresponding tag
+* Release Branches: the are named after their release. Just like the corresponding tag (v.1.1.2)
 
 ### Tags
 
@@ -151,17 +158,17 @@ v1.0.0
 
 ### Commits
 
-There are 3 major categories a commit can fall into:
+There are 3 major TYPES of commits:
 
-* **Feature**: the commit introduces something new
-* **Bugfix**: the commit fixes something
-* **Hotfix**: the commit fixes for a hotfix release
-* **Task**: everything else
+* **FEATURE**: the commit introduces something new
+* **BUGFIX**: the commit fixes something
+* **HOTFIX**: the commit fixes for a hotfix release
+* **TASK**: everything else
 
 To identify them easily within git log commit messages follow this schema:
 
 ```
-[<CATEGORY>] <description> #refs <#issue>
+[<TYPE>] <description> #refs <#issue>
 ```
 
 Also descriptions are written in imperative tense: 'change' not 'changes' or 'changed'.
@@ -170,6 +177,7 @@ Example:
 
 ```
 [FEATURE] add ajax function refs #1234
+[BUGFIX] remove ajax function refs #1234
 ```
 
 ## Best practices
