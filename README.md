@@ -1,5 +1,7 @@
 # A branching model and workflow for <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="49" width="142" alt="git"/>
 
+<img src="http://s2.quickmeme.com/img/b5/b5528b2279824b6cbb2243940570e9ba342d2fbecea732e41f8ddff3c0b9dce1.jpg" alt="">
+
 Yet another branching strategy. It was made to be used for release-based software development projects. However, it can be adjusted to fit any type of project.
 
 I am using this with a centralized git workflow.
