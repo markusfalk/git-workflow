@@ -1,5 +1,25 @@
 # git-workflow
-Yet another branching strategy
+
+Yet another branching strategy.
+
+I am using this with a centralized git workflow. Would be interesting to see how people use this with forking workflow?!
+
+```
+           +------+
+           |      |
+  +-----+  + REPO +  +-----+
+  |        |      |        |
+  |        +------+        |
+  |            +           |
+  |            |           |
+  |            |           |
+  |            |           |
+  |            |           |
+  +            +           +
+USER A       USER B      USER C
+
+      Centralized workflow
+```
 
 ## Branches
 
@@ -53,18 +73,17 @@ This branch is used to merge in urgent fixes that cannot wait for the next plann
 
 ### Master
 
-As usual this is your main branch. Here Tags/Releases are created.
+As usual this is your main branch. Tags/Releases are created in that branch. It can go live anytime and is used for rollbacks if necessary.
 
 ### Development
 
-This is the main development branch. It contains all implemented features. Integration tests can be run here.
+This is the main development branch. It contains all finished features. Integration tests can be run here.
 
-* branch from master
-* merge to master (creating a release)
+* branch and update from master
 
 ### Story
 
-If a set of features can be accumulated into something bigger or if you are working on something new with other developers this branch is where it goes.
+If a set of features can be accumulated into something bigger or if you are working on something new with other developers this branch is where it goes. This branch represents a user story known from agile software development methodologies. Smaller features and tasks can be branched from the story branch.
 
 * branch from development
 * merge to development
@@ -78,7 +97,7 @@ Feature branches are used to implement new features. Create branches for small u
 
 ### Release
 
-For preparing a new release and to add minor fixes or changes release branches are created. There you can add version numbers or change logs.
+To prepare for a new relase a new release branche is created. There you can add version numbers or change logs - whatever is related to the release only.
 
 * branches from development
 * merges into development & master (creating a tag/release)
