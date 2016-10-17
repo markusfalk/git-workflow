@@ -1,5 +1,14 @@
 # A branching model and workflow for <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="49" width="142" alt="git"/>
 
+## Table of contents
+
+* [About](#about)
+* [Branches](#branches)
+* [Naming conventions](#naming-convention)
+* [Best practices](#best-practices)
+
+## About
+
 Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
 
 I am using this with a centralized git workflow.
