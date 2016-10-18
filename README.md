@@ -4,7 +4,16 @@
 
 * [About](#about)
 * [Branches](#branches)
+  * [Hotfix](#hotfix)
+  * [Master](#master)
+  * [Development](#development)
+  * [Story](#story)
+  * [Feature](#feature)
+  * [Release](#release)
+  * [Test](#test)
 * [Naming conventions](#naming-convention)
+  * [Branches](#branches-1)
+  * [Commits](#commits)
 * [Best practices](#best-practices)
 
 ## About
