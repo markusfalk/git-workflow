@@ -1,8 +1,30 @@
 # A branching model and workflow for <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="49" width="142" alt="git"/>
 
-<img src="http://s2.quickmeme.com/img/b5/b5528b2279824b6cbb2243940570e9ba342d2fbecea732e41f8ddff3c0b9dce1.jpg" alt="">
+## Table of contents
 
-Yet another branching strategy. It was made to be used for release-based software development projects. However, it can be adjusted to fit any type of project.
+* [About](#about)
+* [Branches](#branches)
+  * [Hotfix](#hotfix)
+  * [Master](#master)
+  * [Development](#development)
+  * [Story](#story)
+  * [Feature](#feature)
+  * [Release](#release)
+  * [Test](#test)
+* [Naming conventions](#naming-convention)
+  * [Branches](#branches-1)
+  * [Tags](#tags)
+  * [Commits](#commits)
+* [Best practices](#best-practices)
+* [Semantic Versioning](#semantic-versioning)
+* [Acknowledgments](#acknowledgments)
+* [License](#license)
+
+## About
+
+Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
+
+<img src="http://s2.quickmeme.com/img/b5/b5528b2279824b6cbb2243940570e9ba342d2fbecea732e41f8ddff3c0b9dce1.jpg" alt="">
 
 I am using this with a centralized git workflow.
 
@@ -158,14 +180,16 @@ After all the work is done it is time to release something. Here is what that cy
 
 #### Tagging
 
+Tags should be used to record certain releases. Not only for archiving purposes but also for rolling back when something goes wrong with deployment. It is reccomended to use annotated tags because the latest commit (default annotation) might not be sufficiently describe the whole release.
+
 ```
-v<semver>
+git tag v<semver> -m <Annotation>
 ```
 
 Example:
 
 ```
-v1.0.0
+v1.0.0 'Initial Release of Awesome'
 ```
 
 ### Commits
@@ -206,9 +230,15 @@ Example:
 
 Also you can find some accumulated info about this on the [front-end cheat sheet](https://github.com/markusfalk/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf?raw=true) [PDF].
 
-## Kudos
+## Acknowledgments
 
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [GIT cheat sheet](http://pixelbrackets.github.io/git_cheat_sheet/git_cheat_sheet.pdf)
 * [Everything GIT at Atlassian](https://www.atlassian.com/git/)
 * [Graphics created with asciiflow](http://asciiflow.com/)
+
+## License
+
+The MIT License (MIT)
+
+Copyright 2016 Markus Falk
