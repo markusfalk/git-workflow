@@ -20,10 +20,11 @@
 * [Acknowledgments](#acknowledgments)
 * [License](#license)
 
-
 ## About
 
 Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
+
+<img src="http://s2.quickmeme.com/img/b5/b5528b2279824b6cbb2243940570e9ba342d2fbecea732e41f8ddff3c0b9dce1.jpg" alt="">
 
 I am using this with a centralized git workflow.
 
@@ -164,7 +165,20 @@ The **exceptions** to the rule are:
 * test
 * Release Branches: the are named after their release. Just like the corresponding tag (v.1.1.2)
 
-### Tags
+### Tags and Releases
+
+After all the work is done it is time to release something. Here is what that cycle could look like:
+
+* feature branches get merged to their story branches
+* story branches get merged to development branch
+* a new release branch is created from development
+* after a successful deployment, the release branch can be merged to master and gets a new tag
+* master branch is merged to development branch
+* development branch is merged to all story or feature branches that did not make it into the last release
+* all released story, feature, bugfix or release branches will be deleted by their authors
+* celebrate, repeat :)
+
+#### Tagging
 
 Tags should be used to record certain releases. Not only for archiving purposes but also for rolling back when something goes wrong with deployment. It is reccomended to use annotated tags because the latest commit (default annotation) might not be sufficiently describe the whole release.
 
