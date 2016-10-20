@@ -17,7 +17,9 @@
   * [Commits](#commits)
 * [Best practices](#best-practices)
 * [Semantic Versioning](#semantic-versioning)
-* [Kudos](#kudos)
+* [Acknowledgments](#acknowledgments)
+* [License](#license)
+
 
 ## About
 
@@ -214,9 +216,15 @@ Example:
 
 Also you can find some accumulated info about this on the [front-end cheat sheet](https://github.com/markusfalk/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf?raw=true) [PDF].
 
-## Kudos
+## Acknowledgments
 
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [GIT cheat sheet](http://pixelbrackets.github.io/git_cheat_sheet/git_cheat_sheet.pdf)
 * [Everything GIT at Atlassian](https://www.atlassian.com/git/)
 * [Graphics created with asciiflow](http://asciiflow.com/)
+
+## License
+
+The MIT License (MIT)
+
+Copyright 2016 Markus Falk
