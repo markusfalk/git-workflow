@@ -13,8 +13,11 @@
   * [Test](#test)
 * [Naming conventions](#naming-convention)
   * [Branches](#branches-1)
+  * [Tags](#tags)
   * [Commits](#commits)
 * [Best practices](#best-practices)
+* [Semantic Versioning](#semantic-versioning)
+* [Kudos](#kudos)
 
 ## About
 
@@ -161,14 +164,16 @@ The **exceptions** to the rule are:
 
 ### Tags
 
+Tags should be used to record certain releases. Not only for archiving purposes but also for rolling back when something goes wrong with deployment. It is reccomended to use annotated tags because the latest commit (default annotation) might not be sufficiently describe the whole release.
+
 ```
-v<semver>
+git tag v<semver> -m <Annotation>
 ```
 
 Example:
 
 ```
-v1.0.0
+v1.0.0 'Initial Release of Awesome'
 ```
 
 ### Commits
