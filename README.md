@@ -24,7 +24,7 @@
 
 ## About
 
-Yet another branching strategy. It was made to be used for release-based software development projects. However, it can adjusted to fit any type of project.
+Yet another branching strategy. It was made to be used for release-based software development projects. However, it can be adjusted to fit any type of project.
 
 
 I am using this with a centralized git workflow.
