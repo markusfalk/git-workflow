@@ -205,7 +205,7 @@ There are 3 major TYPES of commits:
 To identify them easily within git log commit messages follow this schema:
 
 ```
-[<TYPE>] <description> #refs <#issue>
+[<TYPE>] <description> refs <#issue>
 ```
 
 Also descriptions are written in imperative tense: 'change' not 'changes' or 'changed'.
