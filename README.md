@@ -5,6 +5,8 @@
 ## Table of contents
 
 * [About](#about)
+  * [What are the benefits](#what-are-the-benefits)
+* [Prerequisites](#prerequisites)
 * [Branches](#branches)
   * [Hotfix](#hotfix)
   * [Master](#master)
@@ -26,8 +28,24 @@
 
 Yet another branching strategy. It was made to be used for release-based software development projects. However, it can be adjusted to fit any type of project.
 
+### What are the benefits
 
-I am using this with a centralized git workflow.
+Having a well defined workflow has a lot of benefits. This guide aimes to provide you with all of these:
+
+* It makes it easy to understand projects new to a developer
+* It makes working on a project quick and efficient
+* It scales well and tries to clean itself up
+* It ensures all changes are tracked and nothing is lost on local machines
+* It enforces many best practices for a good git hygine
+* It works great witch scrum projects but is flexible enough to work in any other way
+* It makes code reviews easy
+* It makes setting up new projects easy
+* It provides additional freedom for customization
+* It makes release management easy because all features are sepereated until release. 
+
+## Prerequisites
+
+This workflow is intended to be used with a centralized git workflow.
 
 ```ruby
            +------+
