@@ -45,7 +45,8 @@ Having a well defined workflow has a lot of benefits. This guide aimes to provid
 
 ## Prerequisites
 
-This workflow is intended to be used with a centralized git workflow.
+* It works under the assumption that the same source code will always produce the same compiled software.
+* This workflow is intended to be used with a centralized git workflow.
 
 ```ruby
            +------+
@@ -111,11 +112,11 @@ This branch is used to merge in urgent fixes that cannot wait for the next plann
 
 ### Master
 
-As usual this is your main branch. Tags/Releases are created in that branch. It can go live anytime and is used for rollbacks if necessary.
+As usual this is your main branch. Tags/Releases are created in that branch. It can go live anytime and tags here are used for rollbacks if necessary.
 
 ### Development
 
-This is the main development branch. It contains all finished features. Integration tests can be run here.
+This is the main development branch. It contains all finished features. Integration tests can be run here. It is used as a safety net so that you do not need to work or rely on master until you really have to.
 
 * branch and update from master
 
@@ -123,28 +124,35 @@ This is the main development branch. It contains all finished features. Integrat
 
 If a set of features can be accumulated into something bigger or if you are working on something with other developers this branch is where it goes. This branch represents a user story known from agile software development methodologies. Smaller features and tasks can be branched from the story branch for individual development.
 
+It is also used to have a common base for different smaller parts of that feature that are developed by different developers or departments. If for example you have to implement a front-end communicating with a REST service. Front-end and back-end could create branches from this story and only merge back changes to it when they ready for the other developer to be used. Until then, each developer has its own branch. This ensures independent development, use of git and makes it easy to share code with others.
+
 * branch from development
 * merge to development
 * gets deleted after the story has been merged to master and released
 
 ### Feature
 
-Feature branches are used to implement new features, tasks or bugfixes. Create branches for small units of code. They live as long as you are working on them.
+Feature branches are used to implement new features, tasks or bugfixes. Create branches for small units of code. They live as long as you are working on them. Taken from the [example above](#story): this is where the actual implementation of the REST service would be.
 
 * branch directly from development or a story branch
 * merge back into development or a story branch
 * gets deleted after the feature has been merged to story/master
 
-### Release
+### "Release"
 
-To prepare for a new relase a new release branche is created. There you can add version numbers or change logs - whatever is related to the release only.
+To prepare for a new relase a new release branch is created (have a look at the [naming conventions](#naming-convention)).
+
+In this branch you have the freedom to choose whatever task, bugfix, story or feature you would like to release. At this point it is independent from your scrum planning. If a story didn't make it in time as was planned, then just do not include it in the branch. 
+
+Because the integration of all changes needs to be tested, this branch is very likely to be identical to one of your [test branches](#test). But in this branch you can add version numbers or change logs - whatever is related to the release only.
 
 * branches from development
 * merges into development & master (creating a tag/release)
+* will be deleted after the release has been rolled out 
 
-### Test
+### "Test"
 
-The 'test' branch is a 'read only branch' that can be used to install a set of features onto a testing environment/stage/server. Simply merge any branch you want to test or cherry pick commits into this branch. You can have as many testing branches as you like. I am using  a 'pre-production-server' and 'test-server' branch. Whenever a push on one of those happens it is autmatically installed on one of those machines.
+The 'test' branch is a 'read only branch' that can be used to install a set of features onto a testing environment/stage/server. Simply merge any branch you want to test or cherry pick commits into this branch. You can have as many testing branches as you like. These branches can be used for automated integration tests. With every push on one of them, an automated build can deploy this branch to your testing server.
 
 * branched from any other (depending on what you want to test - could be hotfix branch, development a story or a feature)
 * never merges back into any other branch!
@@ -159,9 +167,9 @@ To identify the different types of branches I just mentioned it is usefull to fo
 The name of a branch consists of the following delimited by '-':
 
 * Date
-* types - can be hotfix, story, feature, bugfix or task (see commits for more info on those types)
+* types - can be HOTFIX, STORY, FEATURE, BUGFIX or TASK (see commits for more info on those types)
 * #issue
-* name of branch author. (makes it easy to identify who should clean up branches after release)
+* name of branch author (makes it easy to identify who should clean up branches after release)
 * short description (use _ for spaces)
 
 Schema:
@@ -181,8 +189,8 @@ The **exceptions** to the rule are:
 
 * master
 * development
-* test
-* Release Branches: the are named after their release. Just like the corresponding tag (v.1.1.2)
+* test branches: can be named after your test-servers (e.g.: test-integration-server, test-pre-production-server)
+* release branches: the are named after their release. Just like the corresponding tag (e.g.: v.1.1.2)
 
 ### Tags and Releases
 
@@ -217,7 +225,7 @@ There are 3 major TYPES of commits:
 
 * **FEATURE**: the commit introduces something new
 * **BUGFIX**: the commit fixes something
-* **HOTFIX**: the commit fixes for a hotfix release
+* **HOTFIX**: the commit fixes something for a hotfix release
 * **TASK**: everything else
 
 To identify them easily within git log commit messages follow this schema:
@@ -260,4 +268,4 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 
 The MIT License (MIT)
 
-Copyright 2016 Markus Falk
+Copyright 2017 Markus Falk
