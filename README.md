@@ -148,7 +148,7 @@ The name of a branch consists of the following delimited by '-':
 
 Schema:
 ```
-YYYYMMDD-<TYPE>-<#issue>[-<TYPE>-<#issue>]-<author-name>-<short_description>
+YYYYMMDD-<TYPE>-<#issue>[-<TYPE>-<#issue>]-<author.name>-<short_description>
 ```
 
 Example:
