@@ -234,13 +234,23 @@ To identify them easily within git log commit messages follow this schema:
 [<TYPE>] <description> refs <#issue>
 ```
 
-Also descriptions are written in imperative tense: 'change' not 'changes' or 'changed'.
-
 Example:
 
 ```
 [FEATURE] add ajax function refs #1234
 [BUGFIX] remove ajax function refs #1234
+```
+
+
+#### Imperative tense
+
+All descriptions are written in imperative tense: 'change' not 'changes' or 'changed'. A good way to remember this to think of the words "This commit will ..." and then following this write your description.
+
+Example:
+
+```
+"This commit will ... " gc -m "[FEATURE] add ajax function refs #1234"
+"This commit will ... " gc -m "[BUGFIX] remove ajax function refs #1234"
 ```
 
 ## Best practices
