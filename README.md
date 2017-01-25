@@ -249,8 +249,8 @@ All descriptions are written in imperative tense: 'change' not 'changes' or 'cha
 Example:
 
 ```
-"This commit will ... " gc -m "[FEATURE] add ajax function refs #1234"
-"This commit will ... " gc -m "[BUGFIX] remove ajax function refs #1234"
+This commit will ... "[FEATURE] add ajax function refs #1234"
+This commit will ... "[BUGFIX] remove ajax function refs #1234"
 ```
 
 ## Best practices
