@@ -204,7 +204,7 @@ After all the work is done it is time to release something. Here is what that cy
 
 #### Tagging
 
-Tags should be used to record certain releases. Not only for archiving purposes but also for rolling back when something goes wrong with deployment. It is reccomended to use annotated tags because the latest commit (default annotation) might not be sufficiently describe the whole release.
+Tags should be used to record certain releases. Not only for archiving purposes but also for rolling back when something goes wrong with deployment. It is recommended to use annotated tags because the latest commit (default annotation) might not be sufficiently describe the whole release.
 
 ```
 git tag v<semver> -m <Annotation>
