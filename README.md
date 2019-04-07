@@ -164,22 +164,21 @@ To identify the different types of branches I just mentioned it is usefull to fo
 
 The name of a branch consists of the following delimited by '-':
 
-* types - can be HOTFIX, STORY, FEATURE, BUGFIX or TASK (see commits for more info on those types)
 * #issue
 * name of branch author (makes it easy to identify who should clean up branches after release)
 * short description (use _ for spaces)
 
 Schema:
 ```
-<TYPE>-<#issue>[/<TYPE>-<#issue>]-<short_description>-<author.name>
+<#issue>[/<#issue>]-<short_description>-<author.name>
 ```
 
 Example:
 ```
-BUGFIX-111-a_standalone_bugfix-markus.falk
-FEATURE-123-a_standalone_feature-markus.falk
-STORY-456-a_story_we_work_on-markus.falk
-STORY-456/FEATURE-789-subtask_of_a_story-markus.falk
+111-a_standalone_bugfix-markus.falk
+123-a_standalone_feature-markus.falk
+456-a_story_we_work_on-markus.falk
+456/789-subtask_of_a_story-markus.falk
 ```
 
 The **exceptions** to the rule are:
