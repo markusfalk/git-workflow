@@ -164,7 +164,6 @@ To identify the different types of branches I just mentioned it is usefull to fo
 
 The name of a branch consists of the following delimited by '-':
 
-* Date
 * types - can be HOTFIX, STORY, FEATURE, BUGFIX or TASK (see commits for more info on those types)
 * #issue
 * name of branch author (makes it easy to identify who should clean up branches after release)
@@ -172,15 +171,15 @@ The name of a branch consists of the following delimited by '-':
 
 Schema:
 ```
-YYYYMMDD-<TYPE>-<#issue>[-<TYPE>-<#issue>]-<author.name>-<short_description>
+<TYPE>-<#issue>[-<TYPE>-<#issue>]-<author.name>-<short_description>
 ```
 
 Example:
 ```
-20151006-BUGFIX-111-m.falk-a_standalone_bugfix
-20151006-FEATURE-123-m.falk-a_standalone_feature
-20151006-STORY-456-m.falk-a_story_we_work_on
-20151006-STORY-456-FEATURE-789-m.falk-subtask_of_a_story
+BUGFIX-111-m.falk-a_standalone_bugfix
+FEATURE-123-m.falk-a_standalone_feature
+STORY-456-m.falk-a_story_we_work_on
+STORY-456-FEATURE-789-m.falk-subtask_of_a_story
 ```
 
 The **exceptions** to the rule are:
@@ -275,5 +274,3 @@ Also you can find some accumulated info about this on the [front-end cheat sheet
 ## License
 
 The MIT License (MIT)
-
-Copyright 2017 Markus Falk
