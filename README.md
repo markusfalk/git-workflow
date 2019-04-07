@@ -43,8 +43,10 @@ Having a well defined workflow has a lot of benefits. This guide aimes to provid
 
 ## Prerequisites
 
-* It works under the assumption that the same source code will always produce the same compiled software.
-* This workflow is intended to be used with a centralized git workflow.
+* It works under the assumption that the same source code will always produce the same compiled software
+* It also assumes that you want to release all of your stories and features once they are done
+* This workflow is intended to be used with a centralized git workflow
+
 
 ```ruby
            +------+
