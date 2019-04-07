@@ -237,6 +237,9 @@ Example:
 [BUGFIX] remove ajax function refs #1234
 ```
 
+#### Alternative
+
+If you prefer a more visual approach to distinguish your commits you could try [gitmoji](https://gitmoji.carloscuesta.me). It also comes with a pre-commit hook and a cli.
 
 #### Imperative tense
 
