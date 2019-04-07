@@ -186,7 +186,7 @@ The **exceptions** to the rule are:
 * master
 * development
 * test branches: can be named after your test-servers (e.g.: test-integration-server, test-pre-production-server)
-* release branches: the are named after their release. Just like the corresponding tag (e.g.: v.1.1.2)
+* release branches: the are named after their release. Just like the corresponding tag (e.g.: v1.1.2)
 
 ### Tags and Releases
 
