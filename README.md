@@ -171,7 +171,7 @@ The name of a branch consists of the following delimited by '-':
 
 Schema:
 ```
-<TYPE>-<#issue>[-<TYPE>-<#issue>]-<author.name>-<short_description>
+<TYPE>-<#issue>[/<TYPE>-<#issue>]-<author.name>-<short_description>
 ```
 
 Example:
@@ -179,7 +179,7 @@ Example:
 BUGFIX-111-m.falk-a_standalone_bugfix
 FEATURE-123-m.falk-a_standalone_feature
 STORY-456-m.falk-a_story_we_work_on
-STORY-456-FEATURE-789-m.falk-subtask_of_a_story
+STORY-456/FEATURE-789-m.falk-subtask_of_a_story
 ```
 
 The **exceptions** to the rule are:
