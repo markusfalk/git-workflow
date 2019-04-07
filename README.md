@@ -1,6 +1,4 @@
-# A branching model and workflow for <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="49" width="142" alt="git"/>
-
-<img src="http://s2.quickmeme.com/img/b5/b5528b2279824b6cbb2243940570e9ba342d2fbecea732e41f8ddff3c0b9dce1.jpg" alt="">
+# A branching model and workflow for <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="49" width="142" alt="git" />
 
 ## Table of contents
 
@@ -112,11 +110,11 @@ This branch is used to merge in urgent fixes that cannot wait for the next plann
 
 ### Master
 
-As usual this is your main branch. Tags/Releases are created in that branch. It can go live anytime and tags here are used for rollbacks if necessary.
+Master is your main branch. Tags and Releases are created in that branch. It can go live anytime and tags here are used for rollbacks if necessary.
 
 ### Development
 
-This is the main development branch. It contains all finished features. Integration tests can be run here. It is used as a safety net so that you do not need to work or rely on master until you really have to.
+This is the main development branch. It contains all finished story and feature branches. Integration tests can be run here. It is used as a safety net so that you do not need to work or rely on master until you really have to. It can also be used to share finished stories that another story builds upon but that is not yet released.
 
 * branch and update from master
 
@@ -148,7 +146,7 @@ Because the integration of all changes needs to be tested, this branch is very l
 
 * branches from development
 * merges into development & master (creating a tag/release)
-* will be deleted after the release has been rolled out 
+* will be deleted after the release has been rolled out
 
 ### "Test"
 
