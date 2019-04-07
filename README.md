@@ -1,4 +1,4 @@
-# A branching model and workflow for <img src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="49" width="142" alt="git" />
+# A branching model and workflow for git
 
 ## Table of contents
 
