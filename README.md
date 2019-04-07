@@ -171,15 +171,15 @@ The name of a branch consists of the following delimited by '-':
 
 Schema:
 ```
-<TYPE>-<#issue>[/<TYPE>-<#issue>]-<author.name>-<short_description>
+<TYPE>-<#issue>[/<TYPE>-<#issue>]-<short_description>-<author.name>
 ```
 
 Example:
 ```
-BUGFIX-111-m.falk-a_standalone_bugfix
-FEATURE-123-m.falk-a_standalone_feature
-STORY-456-m.falk-a_story_we_work_on
-STORY-456/FEATURE-789-m.falk-subtask_of_a_story
+BUGFIX-111-a_standalone_bugfix-markus.falk
+FEATURE-123-a_standalone_feature-markus.falk
+STORY-456-a_story_we_work_on-markus.falk
+STORY-456/FEATURE-789-subtask_of_a_story-markus.falk
 ```
 
 The **exceptions** to the rule are:
