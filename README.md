@@ -44,7 +44,7 @@ Having a well defined workflow has a lot of benefits. This guide aimes to provid
 ## Prerequisites
 
 * It works under the assumption that the same source code will always produce the same compiled software
-* It also assumes that you want to release all of your stories and features once they are done
+* It also assumes that you want to release all of your stories and features once they are done. I have explained an [alternative approach](#alternative-approach) to this continous method.
 * This workflow is intended to be used with a centralized git workflow
 
 
@@ -149,6 +149,10 @@ Because the integration of all changes needs to be tested, this branch is very l
 * branches from development
 * merges into development & master (creating a tag/release)
 * will be deleted after the release has been rolled out
+
+#### Alternative Approach 
+
+The previously described approach assumes that all finished stories are automatically planned for release. In case you want more control over what is beaing released after a sprint you can branch off the release branch from master, then merge all of your storie branches into it that you want to be part of the release. Then merge this back to master and development.
 
 ### "Test"
 
