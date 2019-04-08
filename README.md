@@ -156,11 +156,21 @@ The previously described approach assumes that all finished stories are automati
 
 ### "Test"
 
-The 'test' branch is a 'read only branch' that can be used to install a set of features onto a testing environment/stage/server. Simply merge any branch you want to test or cherry pick commits into this branch. You can have as many testing branches as you like. These branches can be used for automated integration tests. With every push on one of them, an automated build can deploy this branch to your testing server.
+The 'test' branches are 'read only branches' that can be used to install a set of features onto a testing environment or staging server. Simply merge any branch you want to test or cherry pick commits into this branch. You can have as many testing branches as you like. These branches can be used for automated integration tests. With every push on one of them, an automated build can deploy this branch to your testing server.
 
 * branched from any other (depending on what you want to test - could be hotfix branch, development a story or a feature)
-* never merges back into any other branch!
-* delete after the test is finished succesfully
+* never merges back into any other branch
+
+Examples:
+
+```
+test
+pre-release
+...
+master
+development
+```
+
 
 ## Naming Convention
 
