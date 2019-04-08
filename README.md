@@ -179,12 +179,11 @@ Schema:
 <#issue>[/<#issue>]-<short_description>-<author.name>
 ```
 
-Example:
+Examples:
 ```
-111-a_standalone_bugfix-markus.falk
 123-a_standalone_feature-markus.falk
-456-a_story_we_work_on-markus.falk
-456/789-subtask_of_a_story-markus.falk
+456-a_story-markus.falk
+456/789-sub_feature_of_a_story-markus.falk
 ```
 
 The **exceptions** to the rule are:
