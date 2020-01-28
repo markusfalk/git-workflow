@@ -1,5 +1,7 @@
 # A branching model and workflow for git
 
+<img src="https://raw.githubusercontent.com/markusfalk/git-workflow/master/git-workflow-logo.svg" alt="" height="50" width="50">
+
 ## Table of contents
 
 * [About](#about)
