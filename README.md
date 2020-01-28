@@ -1,6 +1,6 @@
 # A branching model and workflow for git
 
-<img src="https://raw.githubusercontent.com/markusfalk/git-workflow/master/git-workflow-logo.svg" alt="" height="50" width="50">
+<img src="https://github.com/markusfalk/git-workflow/blob/master/git-workflow-logo.svg" alt="" height="150" width="150">
 
 ## Table of contents
 
