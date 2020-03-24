@@ -41,7 +41,7 @@ Having a well defined workflow has a lot of benefits. This guide aimes to provid
 * It makes code reviews easy
 * It makes setting up new projects easy
 * It provides additional freedom for customization
-* It makes release management easy because all features are sepereated until release. 
+* It makes release management easy because all features are sepereated until release.
 
 ## Prerequisites
 
@@ -144,7 +144,7 @@ Feature branches are used to implement new features, tasks or bugfixes. Create b
 
 To prepare for a new relase a new release branch is created (have a look at the [naming conventions](#naming-convention)).
 
-In this branch you have the freedom to choose whatever task, bugfix, story or feature you would like to release. At this point it is independent from your scrum planning. If a story didn't make it in time as was planned, then just do not include it in the branch. 
+In this branch you have the freedom to choose whatever task, bugfix, story or feature you would like to release. At this point it is independent from your scrum planning. If a story didn't make it in time as was planned, then just do not include it in the branch.
 
 Because the integration of all changes needs to be tested, this branch is very likely to be identical to one of your [test branches](#test). But in this branch you can add version numbers or change logs - whatever is related to the release only.
 
@@ -152,7 +152,7 @@ Because the integration of all changes needs to be tested, this branch is very l
 * merges into development & master (creating a tag/release)
 * will be deleted after the release has been rolled out
 
-#### Alternative Approach 
+#### Alternative Approach
 
 The previously described approach assumes that all finished stories are automatically planned for release. In case you want more control over what is beaing released after a sprint you can branch off the release branch from master, then merge all of your storie branches into it that you want to be part of the release. Then merge this back to master and development.
 
@@ -198,6 +198,8 @@ Examples:
 456/789-sub_feature_of_a_story-markus.falk
 ```
 
+This schema can also be used to keep to together the changes within fron-end and back-end in case you have seperate repositiores for that.
+
 The **exceptions** to the rule are:
 
 * master
@@ -241,17 +243,23 @@ There are 3 major TYPES of commits:
 * **HOTFIX**: the commit fixes something for a hotfix release
 * **TASK**: everything else
 
-To identify them easily within git log commit messages follow this schema:
+I recommend using [commitlint](https://commitlint.js.org/#/) with the following schema:
 
 ```
-[<TYPE>] <description> refs <#issue>
+type(scope?): subject
+body?
+footer?
+refs <#issue>
 ```
 
 Example:
 
 ```
-[FEATURE] add ajax function refs #1234
-[BUGFIX] remove ajax function refs #1234
+feature(UserProfile): get profile image
+
+Calling API to get image for profile view.
+
+refs #1234
 ```
 
 #### Alternative
@@ -265,8 +273,8 @@ All descriptions are written in imperative tense: 'change' not 'changes' or 'cha
 Example:
 
 ```
-This commit will ... "[FEATURE] add ajax function refs #1234"
-This commit will ... "[BUGFIX] remove ajax function refs #1234"
+This commit will ... "feature: add ajax function refs #1234"
+This commit will ... "bugfix: remove ajax function refs #1234"
 ```
 
 ## Best practices
