@@ -165,14 +165,13 @@ The 'test' branches are 'read only branches' that can be used to install a set o
 
 Examples:
 
-```
+```txt
 test
 pre-release
 ...
 master
 development
 ```
-
 
 ## Naming Convention
 
@@ -182,17 +181,19 @@ To identify the different types of branches I just mentioned it is usefull to fo
 
 The name of a branch consists of the following delimited by '-':
 
-* #issue
+* number or identifier of issue
 * name of branch author (makes it easy to identify who should clean up branches after release)
 * short description (use _ for spaces)
 
 Schema:
-```
+
+```txt
 <#issue>[/<#issue>]-<short_description>-<author.name>
 ```
 
 Examples:
-```
+
+```txt
 123-a_standalone_feature-markus.falk
 456-a_story-markus.falk
 456/789-sub_feature_of_a_story-markus.falk
@@ -224,13 +225,13 @@ After all the work is done it is time to release something. Here is what that cy
 
 Tags should be used to record certain releases. Not only for archiving purposes but also for rolling back when something goes wrong with deployment. It is recommended to use annotated tags because the latest commit (default annotation) might not be sufficiently describe the whole release.
 
-```
+```txt
 git tag v<semver> -m <Annotation>
 ```
 
 Example:
 
-```
+```txt
 v1.0.0 'Initial Release of Awesome'
 ```
 
@@ -245,7 +246,7 @@ There are a number of major types of commits:
 
 I recommend using [commitlint](https://commitlint.js.org) with the following schema:
 
-```
+```txt
 type(scope?): subject
 
 body?
@@ -293,8 +294,6 @@ This commit will ... "bugfix: remove ajax function refs #1234"
 ## Semantic Versioning
 
 [Semantic versioning](http://semver.org/) is used for tags and releases.
-
-Also you can find some accumulated info about this on the [front-end cheat sheet](https://github.com/markusfalk/front-end-cheatsheet/blob/master/pdf/front-end-cheat-sheet.pdf?raw=true) [PDF].
 
 ## Acknowledgments
 
