@@ -247,8 +247,11 @@ I recommend using [commitlint](https://commitlint.js.org) with the following sch
 
 ```
 type(scope?): subject
+
 body?
+
 footer?
+
 refs <#issue>
 ```
 
