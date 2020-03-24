@@ -236,14 +236,14 @@ v1.0.0 'Initial Release of Awesome'
 
 ### Commits
 
-There are 3 major TYPES of commits:
+There are a number of major types of commits:
 
-* **FEATURE**: the commit introduces something new
-* **BUGFIX**: the commit fixes something
-* **HOTFIX**: the commit fixes something for a hotfix release
-* **TASK**: everything else
+* **feature**: the commit introduces something new
+* **bugfix**: the commit fixes something
+* **hotfix**: the commit fixes something for a hotfix release
+* **task**: everything else
 
-I recommend using [commitlint](https://commitlint.js.org/#/) with the following schema:
+I recommend using [commitlint](https://commitlint.js.org) with the following schema:
 
 ```
 type(scope?): subject
@@ -261,6 +261,8 @@ Calling API to get image for profile view.
 
 refs #1234
 ```
+
+:information_source: I have also published [commitlint rules](https://github.com/markusfalk/commitlint-config-git-workflow) that you can install to match this guide.
 
 #### Alternative
 
