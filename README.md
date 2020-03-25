@@ -32,7 +32,7 @@ If you think about introducing a branching strategy to your workflow, start smal
 
 Happy Coding :nerd_face:
 
-[Markus](www.markus-falk.com)
+[Markus](https://www.markus-falk.com)
 
 ### Benefits
 
