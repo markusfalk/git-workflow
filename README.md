@@ -12,7 +12,6 @@
   * [Master](#master)
   * [Development](#development)
   * [Story](#story)
-  * [Feature](#feature)
   * [Release](#release)
   * [Test](#test)
 * [Merge Requests](#merge-requets)
@@ -77,35 +76,35 @@ USER A       USER B      USER C
 The figure below shows what the branching model looks like. Arrows to the right (+->) indicate where to branch off from. Arrows to the left (<-+) show where to merge back into. The small dots (•) represent tags/releases.
 
 ```ruby
-  +              +              +             +            +            +            +
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  |              •<- 1.1.0 ---------------------------------------------+            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  +----- 1.0.1 ->•------------->•<------------+            |            |            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  |              |              |             <------------+            |            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |         --->
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  |              |              |             +------------>            |            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  <--------------+              +------------->            |            |            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  |              +-------------->             |            |            |            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  |       1.0.0  •              +--------------------------------------->            |
-  |              |              |             |            |            |            |
-  |              |              |             |            |            |            |
-  +              +              +             +            +            +            +
-hotfix         master      development      story       feature      release        test
+  +              +              +             +            +            +
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              •<- 1.1.0 --------------------------------+            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  +----- 1.0.1 ->•------------->|             |            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              |              <-------------+            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |         --->
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  <--------------+              +------------->            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |              +-------------->             |            |            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  |       1.0.0  •              +-------------------------->            |
+  |              |              |             |            |            |
+  |              |              |             |            |            |
+  +              +              +             +            +            +
+hotfix         master      development      story        release        test
 
                                    [Branching Model]
 
