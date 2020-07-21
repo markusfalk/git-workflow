@@ -306,3 +306,8 @@ This commit will ... "bugfix: remove ajax function refs #1234"
 * [GIT cheat sheet](http://pixelbrackets.github.io/git_cheat_sheet/git_cheat_sheet.pdf)
 * [Everything GIT at Atlassian](https://www.atlassian.com/git/)
 * [Graphics created with asciiflow](http://asciiflow.com/)
+
+## Branch by Abstraction
+
+[![GOTO 2017 • Feature Branches and Toggles in a Post-GitHub World • Sam Newman](http://img.youtube.com/vi/lqRQYEHAtpk/0.jpg)](http://www.youtube.com/watch?v=lqRQYEHAtpk)
+
