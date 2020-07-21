@@ -311,3 +311,4 @@ This commit will ... "bugfix: remove ajax function refs #1234"
 
 [![GOTO 2017 • Feature Branches and Toggles in a Post-GitHub World • Sam Newman](http://img.youtube.com/vi/lqRQYEHAtpk/0.jpg)](http://www.youtube.com/watch?v=lqRQYEHAtpk)
 
+* https://www.branchbyabstraction.com/
